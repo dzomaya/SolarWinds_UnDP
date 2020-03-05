@@ -4,7 +4,7 @@ The UdNP files here should be tested and modified as needed before production us
 Files are provided as-is, no warranty, and no guarantee of support.
 Files posted  here were tested on Orion Platform 2019.2 HF2, NPM 12.5 and 15.x.x WEBCARDLX firmware.
 
-These UnDPs were created for single phase Tripp Lite UPSes and PDUs using the "LX" network management card platform (e.g. the WEBCARDLX). There on some "GetNext" polls on SNMP table values that won't work quite right on devices with more than one input/output phase. I'd like to make better baseline UnDPs over time, so feel free to ping me with feedback here or on Thwack. 
+These UnDPs were created for single phase Tripp Lite UPSes and PDUs using the "LX" network management card platform (e.g. the WEBCARDLX). They likely won't work with ALL Tripp Lite PDUs/UPSes, but should work with many. There on some "GetNext" polls on SNMP table values that won't work quite right on devices with more than one input/output phase. I'd like to make better baseline UnDPs over time, so feel free to ping me with feedback here or on Thwack. 
 
 ## The files
 
@@ -33,5 +33,8 @@ This UnDP also has two "Converted" pollers that transform the input and output v
 You can find them here:
 https://www.tripplite.com/products/management-utilities
 The MIBs contain the authoriative descriptions of the values used by these pollers. 
+
+## SNMPWEBCARD user?
+These UnDPs are not designed to work with Tripp Lite's older SNMPWEBCARD platform. RFC1628 based UnDPs may be a good starting point if you're looking to add a UPS to SolarWinds. 
 
 ## Note: I work at Tripp Lite
