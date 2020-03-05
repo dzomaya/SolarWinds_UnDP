@@ -8,7 +8,7 @@ These UnDPs were created for single phase Tripp Lite UPSes and PDUs using the "L
 
 ## The files
 
-### TrippLite_Single_Phase_PDU_Alpha.UnDP
+### TrippLite_Single_Phase_UPS_Alpha.UnDP
 This UnDP monitors:
 * tlpAlarmsPresent - Should be 0 normally and > 0 if an alarm condition exists.
 * tlpUpsBatteryStatus- The current status of the UPS batteries (Normal, Low, Depelted, or Unknown)
