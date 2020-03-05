@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomPollers version="9.0">
+  <CustomPoller UniqueName="tlpAlarmsPresentPDU" Description="The present number of active alarm conditions. " OID="1.3.6.1.4.1.850.1.3.1" MIB="TRIPPUPS-MIB:upsEnvTemperature" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="R" Parser="Gauge" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlPduInputPhaseConverted" Description="Conversion of tlpPduInputPhaseVoltage to a number with decimal" OID="" MIB="" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="F" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="{tlpPduInputPhaseVoltage}/10" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpPduInputPhaseVoltage" Description="&quot;The magnitude of the present input voltage for a given phase.&quot;" OID="1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.4" MIB="TRIPPLITE-PRODUCTS:tlpPduInputPhaseVoltage" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpPduOutputCurrent" Description="&quot;The output current, in hundredths of amps, for a given phase.&quot;" OID="1.3.6.1.4.1.850.1.1.3.2.3.2.1.1.5" MIB="TRIPPLITE-PRODUCTS:tlpPduOutputCurrent" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpPduOutputPhaseConverted" Description="tlpPduOutputPhaseVoltage value converted to a number with a decimal point." OID="" MIB="" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="F" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="{tlpPduOutputVoltage}/10" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpPduOutputVoltage" Description="&quot;The magnitude of the present output voltage for a given output line.&quot;" OID="1.3.6.1.4.1.850.1.1.3.2.3.2.1.1.4" MIB="TRIPPLITE-PRODUCTS:tlpPduOutputVoltage" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase PDU (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+</CustomPollers>

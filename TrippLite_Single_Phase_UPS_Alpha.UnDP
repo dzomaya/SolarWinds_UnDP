@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomPollers version="9.0">
+  <CustomPoller UniqueName="tlpAlarmsPresent" Description="The present number of active alarm conditions. " OID="1.3.6.1.4.1.850.1.3.1" MIB="TRIPPUPS-MIB:upsEnvTemperature" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="R" Parser="Gauge" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsBatteryStatus" Description="&quot;The indication of the capacity remaining in the UPS system's&#xD;&#xA;        batteries. A value of batteryNormal indicates that the&#xD;&#xA;        remaining run-time is greater than tlpUpsConfigLowBattTime. A&#xD;&#xA;        value of batteryLow indicates that the remaining " OID="1.3.6.1.4.1.850.1.1.3.1.3.1.1.1.1" MIB="TRIPPLITE-PRODUCTS:tlpUpsBatteryStatus" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="S" Parser="Enumeration" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations>
+      <Enumeration RawValue="1" TextValue="Unknown" />
+      <Enumeration RawValue="2" TextValue="Battery Normal" />
+      <Enumeration RawValue="3" TextValue="Battery Low" />
+      <Enumeration RawValue="4" TextValue="Battery Depleted" />
+    </Enumerations>
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsInputPhaseVoltage" Description="&quot;The magnitude of the present input voltage for a given input line.&quot;" OID="1.3.6.1.4.1.850.1.1.3.1.3.2.2.1.3" MIB="TRIPPLITE-PRODUCTS:tlpUpsInputPhaseVoltage" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsOutputLinePercentLoad" Description="&quot;The percentage of the UPS power capacity presently being used on&#xD;&#xA;        this output line, i.e., the greater of the percent load of true&#xD;&#xA;        power capacity and the percent load of VA.&quot;" OID="1.3.6.1.4.1.850.1.1.3.1.3.3.2.1.5" MIB="TRIPPLITE-PRODUCTS:tlpUpsOutputLinePercentLoad" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="R" Parser="Gauge" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsOutputLinePower" Description="&quot;The present output true power.&quot;" OID="1.3.6.1.4.1.850.1.1.3.1.3.3.2.1.4" MIB="TRIPPLITE-PRODUCTS:tlpUpsOutputLinePower" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsOutputLineVoltage" Description="&quot;The magnitude of the present output voltage for a given output line.&quot;" OID="1.3.6.1.4.1.850.1.1.3.1.3.3.2.1.2" MIB="TRIPPLITE-PRODUCTS:tlpUpsOutputLineVoltage" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="S" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="tlpUpsOutputSource" Description="&quot;The present source of output power. The enumeration none(2)&#xD;&#xA;        indicates that there is no source of output power (and&#xD;&#xA;        therefore no output power), for example, the system has opened&#xD;&#xA;        the output breaker.&quot;" OID="1.3.6.1.4.1.850.1.1.3.1.3.3.1.1.1" MIB="TRIPPLITE-PRODUCTS:tlpUpsOutputSource" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="S" Parser="Enumeration" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="" LabelType="" LabelDetail="">
+    <Enumerations>
+      <Enumeration RawValue="0" TextValue="Unknown" />
+      <Enumeration RawValue="1" TextValue="Other" />
+      <Enumeration RawValue="2" TextValue="None" />
+      <Enumeration RawValue="3" TextValue="Normal" />
+      <Enumeration RawValue="4" TextValue="Bypass" />
+      <Enumeration RawValue="5" TextValue="Battery" />
+      <Enumeration RawValue="6" TextValue="Boosting" />
+      <Enumeration RawValue="7" TextValue="Reducing" />
+      <Enumeration RawValue="8" TextValue="Second" />
+      <Enumeration RawValue="9" TextValue="Economy" />
+    </Enumerations>
+  </CustomPoller>
+  <CustomPoller UniqueName="TrippLiteInputVoltageConverted" Description="Converts tlpUpsInputPhaseVoltage from a raw value representing voltage to the tenths place to a number with a decimal." OID="" MIB="" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="F" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="{tlpUpsInputPhaseVoltage}/10" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+  <CustomPoller UniqueName="TrippLiteOutputVoltageConverted" Description="The tlpUPSOutputLineVoltage value converted to a number with a decimal. " OID="" MIB="" SNMPGetType="GetNext" NetObjectPrefix="N" GroupName="Tripp Lite Single Phase UPS (LX)" PollerType="F" Parser="None" IncludeHistory="True" Unit="" TimeUnitId="0" TimeUnitQuantity="0" DefaultDisplayTimeUnitId="0" Formula="{tlpUpsOutputLineVoltage}/10" LabelType="" LabelDetail="">
+    <Enumerations />
+  </CustomPoller>
+</CustomPollers>
