@@ -17,6 +17,7 @@ This UnDP monitors:
 * tlpUpsOutputPhaseVoltage- The output voltage reported with granularity to the tenths place (e.g. 1251 = 125.1 volts)
 * tlpUpsOutputLinePercentLoad- The current output load as a percentage of total supported load.
 * tlpUpsOutputLinePower- The current output wattage. 
+
 This UnDP also has two "Converted" pollers that transform the input and output voltages to their decimal values. This should make creating graphs a little easier. 
 
 ### TrippLite_Single_Phase_PDU_Alpha.UnDP
@@ -25,6 +26,7 @@ This UnDP monitors:
 * tlpPduInputPhaseVoltage- The input voltage reported with granularity to the tenths place (e.g. 1251 = 125.1 volts)
 * tlpPduOutputPhaseVoltage- The output voltage reported with granularity to the tenths place (e.g. 1251 = 125.1 volts)
 * tlpPduOutputCurrent- The output amperage
+
 This UnDP also has two "Converted" pollers that transform the input and output voltages to their decimal values. This should make creating graphs a little easier. 
 
 ## Looking for the Tripp Lite MIBs?
